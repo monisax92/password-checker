@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Password checker</title>
+</head>
+<body>
+  <div class="container">
+  <form>
+    <label> Set new password: </label><br/>
+    <input type="text" placeholder="Abcdef.1">
+  </form>
+  <ul class="rules-list">
+    <li id="rule-length-8">at least 8 characters</li>
+    <li id="rule-capital">at least 1 capital letter</li>
+    <li id="rule-number">at least 1 number</li>
+    <li id="rule-char">at least 1 special character&nbsp;<span class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">e.g. ! ? @ # $ % & ( ) = + ; ' , . &lt; &gt;</span></span>        
+    </li>
+  </ul>
+</div>
+<svg id="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity=".4" d="M0,32L0,128L43.6,128L43.6,32L87.3,32L87.3,320L130.9,320L130.9,288L174.5,288L174.5,32L218.2,32L218.2,96L261.8,96L261.8,320L305.5,320L305.5,128L349.1,128L349.1,96L392.7,96L392.7,256L436.4,256L436.4,128L480,128L480,0L523.6,0L523.6,192L567.3,192L567.3,96L610.9,96L610.9,224L654.5,224L654.5,128L698.2,128L698.2,288L741.8,288L741.8,64L785.5,64L785.5,192L829.1,192L829.1,128L872.7,128L872.7,192L916.4,192L916.4,288L960,288L960,64L1003.6,64L1003.6,160L1047.3,160L1047.3,160L1090.9,160L1090.9,224L1134.5,224L1134.5,224L1178.2,224L1178.2,96L1221.8,96L1221.8,64L1265.5,64L1265.5,288L1309.1,288L1309.1,192L1352.7,192L1352.7,288L1396.4,288L1396.4,96L1440,96L1440,320L1396.4,320L1396.4,320L1352.7,320L1352.7,320L1309.1,320L1309.1,320L1265.5,320L1265.5,320L1221.8,320L1221.8,320L1178.2,320L1178.2,320L1134.5,320L1134.5,320L1090.9,320L1090.9,320L1047.3,320L1047.3,320L1003.6,320L1003.6,320L960,320L960,320L916.4,320L916.4,320L872.7,320L872.7,320L829.1,320L829.1,320L785.5,320L785.5,320L741.8,320L741.8,320L698.2,320L698.2,320L654.5,320L654.5,320L610.9,320L610.9,320L567.3,320L567.3,320L523.6,320L523.6,320L480,320L480,320L436.4,320L436.4,320L392.7,320L392.7,320L349.1,320L349.1,320L305.5,320L305.5,320L261.8,320L261.8,320L218.2,320L218.2,320L174.5,320L174.5,320L130.9,320L130.9,320L87.3,320L87.3,320L43.6,320L43.6,320L0,320L0,320Z"></path></svg>
+  <script src="script.js"></script>
+</body>
+</html>

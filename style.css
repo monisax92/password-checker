@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #00a0b5;
+	background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
+}
+
+#svg-bottom {
+	position: fixed;
+	bottom: 0;
+	fill: black;
+}
+
+.container {
+	background-color: rgb(229, 228, 226);
+	min-width: 220px;
+	text-align: center;
+	padding: 2rem;
+	margin: 0 auto;
+	border-radius: 5px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+label {
+	display: inline-block;
+	font-size: 2rem;
+	font-family: 'Times New Roman';
+	margin-bottom: 1rem;
+}
+
+input {
+	background-color: #5a5f73;
+	color: white;
+	padding: 10px 20px;
+	border: grey 2px solid;
+	border-radius: 5px;
+}
+
+input:hover {
+	cursor: text;
+}
+
+input:focus {
+	outline: none;
+	/*border: white 2px solid;*/
+	border-radius: 10px;
+}
+
+input::placeholder {
+	color: white;
+	opacity: 0.6;
+}
+
+.rules-list {
+	margin-top: 1rem;
+	text-align: left;
+	padding-left: 2vw;
+}
+
+/* careful with specificity (if .rules-list li, it will overwrite .valid-rule/.invalid-rule) */
+li {
+	color: grey;
+}
+
+.rules-list li span {
+	color: grey;
+	font-size: 1rem;
+	margin-left: 10px;
+}
+
+.invalid-rule {
+	color: red;
+}
+
+.valid-rule {
+	color: green;
+}
+
+.invalid-password {
+	border: orangered 3px solid;
+	background-color: crimson;
+}
+
+.valid-password {
+	border: rgb(99, 230, 190) 3px solid;
+	background-color: rgb(24, 162, 136);
+}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltiptext {
+	/*visibility: hidden;*/
+	transform: translateY(-50%) scale(0);
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 230px;
+	text-align: right;
+	padding-top: 0.5rem;
+	transition: all 0.2s;
+	transform-origin: 100% 0%;
+	/*   color: white;
+  background-color: grey; */
+}
+
+.tooltip:hover .tooltiptext {
+	/* visibility: visible;*/
+	transform: translateY(0%) scale(1);
+}
+
+@media screen and (max-width: 600px) {
+	label {
+		font-size: 1.5rem;
+	}
+}
